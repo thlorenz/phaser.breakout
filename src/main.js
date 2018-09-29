@@ -17,7 +17,7 @@ function init() {
     physics: {
       default: 'arcade',
       arcade: {
-        gravity: { y: 200 }
+        gravity: { y: 100 }
       }
     },
     scene: { preload: preload(ctx), create: create(ctx), update: update(ctx) }
