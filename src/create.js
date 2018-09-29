@@ -1,12 +1,4 @@
-'use strict'
-
-export default function create () {
-  const logo = this.add.image(350, 0, 'logo')
-
-  this.tweens.add({
-    targets: logo,
-    y: 355,
-    duration: 1200,
-    ease: 'Power1'
-  })
+export default ctx => function create() {
+  const ball = this.add.sprite(50, 50, 'ball')
+  ctx.set('sprite:ball', ball)
 }

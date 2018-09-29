@@ -1,12 +1,12 @@
 'use strict'
 
-import Phaser from 'phaser'
-import create from './create.js'
-import logoURL from '../assets/logo.png'
+import '../css/index.css'
 
-function preload () {
-  this.load.image('logo', logoURL);
-}
+import Phaser from 'phaser'
+import ctx from './context'
+import create from './create.js'
+import preload from './preload.js'
+import update from './update.js'
 
 function init() {
   const canvas = document.body.getElementsByTagName("canvas").item(0)
@@ -14,10 +14,13 @@ function init() {
 
   const config = {
     type   : Phaser.AUTO,
-    parent : 'phaser-example',
-    width  : 600,
-    height : 480,
-    scene  : { preload, create }
+    physics: {
+      default: 'arcade',
+      arcade: {
+        gravity: { y: 200 }
+      }
+    },
+    scene: { preload: preload(ctx), create: create(ctx), update: update(ctx) }
   }
 
   const game = new Phaser.Game(config)

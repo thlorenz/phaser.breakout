@@ -12,6 +12,7 @@
   },
   "homepage": "https://github.com/thlorenz/phaser.breakout",
   "dependencies": {
+    "context": "^0.0.1",
     "phaser": "^3.13.0"
   },
   "devDependencies": {
