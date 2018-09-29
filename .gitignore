@@ -1,0 +1,9 @@
+dist/
+build/
+node_modules/
+.cache/
+
+/npm-debug.log
+
+Thumbs.db
+.DS_Store

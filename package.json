@@ -1,0 +1,33 @@
+{
+  "name": "phaser.breakout",
+  "version": "0.0.0",
+  "description": "Phaser 3 Breakout Game",
+  "main": "phaser.breakout.js",
+  "scripts": {
+    "start": "parcel -p 8999 index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thlorenz/phaser.breakout.git"
+  },
+  "homepage": "https://github.com/thlorenz/phaser.breakout",
+  "dependencies": {
+    "phaser": "^3.13.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.10.1"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Thorsten Lorenz",
+    "email": "thlorenz@gmx.de",
+    "url": "http://thlorenz.com"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/thlorenz/phaser.breakout/blob/master/LICENSE"
+  },
+  "engine": {
+    "node": ">=6"
+  }
+}
