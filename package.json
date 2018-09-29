@@ -1,0 +1,38 @@
+{
+  "name": "phaser.breakout",
+  "version": "0.0.0",
+  "description": "Phaser 3 Breakout Game",
+  "main": "phaser.breakout.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server --port=8999",
+    "start": "npm run build && npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thlorenz/phaser.breakout.git"
+  },
+  "homepage": "https://github.com/thlorenz/phaser.breakout",
+  "dependencies": {
+    "phaser": "^3.13.0"
+  },
+  "devDependencies": {
+    "raw-loader": "^0.5.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "~3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Thorsten Lorenz",
+    "email": "thlorenz@gmx.de",
+    "url": "http://thlorenz.com"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/thlorenz/phaser.breakout/blob/master/LICENSE"
+  },
+  "engine": {
+    "node": ">=6"
+  }
+}
